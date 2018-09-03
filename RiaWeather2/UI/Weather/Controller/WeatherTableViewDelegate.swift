@@ -32,4 +32,14 @@ extension WeatherViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return [remove]
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let story = UIStoryboard(name: "WeatherDetail", bundle: nil)
+        let vc = story.instantiateViewController(withIdentifier: "WeatherDetailViewController") as! WeatherDetailViewController
+        
+        vc.cityId = Defaults.getSities()[indexPath.row]
+        vc.cityWeather = weathers[indexPath.row]
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -23,4 +23,13 @@ class WeatherUrls{
         
         return URL(string: urlWithProps)!
     }
+    
+    static func getCities(city: String) -> URL{
+        let base = baseUrl.getBaseUrl()
+        let url = "\(base)data/2.5/forecast"
+        
+        let urlWithProps = Props.addProps(url: url, props: ["id":city])
+        
+        return URL(string: urlWithProps)!
+    }
 }

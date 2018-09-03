@@ -19,4 +19,5 @@ struct CityWeather: Codable {
     var dt: Int?
     var id: Int?
     var name: String?
+    var dt_txt: String?
 }
