@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if Defaults.isFirst(){
             Defaults.setCity(city: ["703448","689559"])
+            Defaults.setIsFirst()
         }
         // Override point for customization after application launch.
         return true

@@ -26,6 +26,9 @@ extension WeatherViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let remove = UITableViewRowAction(style: .destructive, title: "Remove") { action, index in
             self.weathers.remove(at: indexPath.row)
+            var cities = Defaults.getSities()
+            cities.remove(at: indexPath.row)
+            Defaults.setCity(city: cities)
         }
         return [remove]
     }
