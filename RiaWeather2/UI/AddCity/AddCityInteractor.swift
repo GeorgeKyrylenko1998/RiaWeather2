@@ -15,17 +15,12 @@ class AddCityInteractor: AddCityInteractorProtocol {
     func getCities() -> [City] {
         if let path = Bundle.main.path(forResource: "cityList", ofType: "json")
         {
-            if let jsonData = try? Data(contentsOf: URL(string: path)!)
+            
+            if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             {
               let cities = try? JSONDecoder().decode([City].self, from: jsonData)
-                print("CITIES: ", cities)
+                return cities ?? []
             }
-            BaseRequest.urlRequest(url: URL(string: path)!, nil, nil, method: .GET).subscribe(onNext: { (data) in
-                let cities = try? JSONDecoder().decode([City].self, from: data)
-                print("CITIES: ", cities)
-            }, onError: { (error) in
-                print(error.localizedDescription)
-            }, onCompleted: nil, onDisposed: nil)
         }
         
         return []

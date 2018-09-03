@@ -25,7 +25,8 @@ class AddCityPresenter: AddCityPresenterProtocol {
     }
     
     func getCities() {
-        interactor?.getCities()
+        let cities = interactor?.getCities()
+        self.view?.setCities(_cities: cities!)
     }
 
 }

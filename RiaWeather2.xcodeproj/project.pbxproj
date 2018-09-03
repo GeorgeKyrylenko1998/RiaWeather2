@@ -41,6 +41,8 @@
 		5E634D90213D33DA00354FE9 /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E634D8A213D33DA00354FE9 /* AddCityViewController.swift */; };
 		5E634D91213D33DA00354FE9 /* AddCityProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E634D8B213D33DA00354FE9 /* AddCityProtocols.swift */; };
 		5E634D92213D33DA00354FE9 /* AddCityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E634D8C213D33DA00354FE9 /* AddCityInteractor.swift */; };
+		5EC42DA2213D4EA900B11BA5 /* AddCityTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC42DA1213D4EA800B11BA5 /* AddCityTableViewDelegate.swift */; };
+		5EC42DA4213D621D00B11BA5 /* AddCitySearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC42DA3213D621D00B11BA5 /* AddCitySearchBarDelegate.swift */; };
 		A1DCB4C13EBD63007AD4B957 /* Pods_RiaWeather2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E197FA4C71CCB6A1CC32208E /* Pods_RiaWeather2.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		5E634D8A213D33DA00354FE9 /* AddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
 		5E634D8B213D33DA00354FE9 /* AddCityProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityProtocols.swift; sourceTree = "<group>"; };
 		5E634D8C213D33DA00354FE9 /* AddCityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityInteractor.swift; sourceTree = "<group>"; };
+		5EC42DA1213D4EA800B11BA5 /* AddCityTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityTableViewDelegate.swift; sourceTree = "<group>"; };
+		5EC42DA3213D621D00B11BA5 /* AddCitySearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCitySearchBarDelegate.swift; sourceTree = "<group>"; };
 		CC6C3958E66A01E7DB5A6C8D /* Pods-RiaWeather2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiaWeather2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiaWeather2/Pods-RiaWeather2.debug.xcconfig"; sourceTree = "<group>"; };
 		E197FA4C71CCB6A1CC32208E /* Pods_RiaWeather2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiaWeather2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -184,9 +188,9 @@
 		5E634D58213AF0E000354FE9 /* AddCity */ = {
 			isa = PBXGroup;
 			children = (
+				5E634D94213D4D5100354FE9 /* Controller */,
 				5E634D88213D33DA00354FE9 /* AddCityPresenter.swift */,
 				5E634D89213D33DA00354FE9 /* AddCityRouter.swift */,
-				5E634D8A213D33DA00354FE9 /* AddCityViewController.swift */,
 				5E634D8B213D33DA00354FE9 /* AddCityProtocols.swift */,
 				5E634D8C213D33DA00354FE9 /* AddCityInteractor.swift */,
 			);
@@ -252,6 +256,16 @@
 				5E634D84213CC0DD00354FE9 /* UserDefaults.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		5E634D94213D4D5100354FE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E634D8A213D33DA00354FE9 /* AddCityViewController.swift */,
+				5EC42DA1213D4EA800B11BA5 /* AddCityTableViewDelegate.swift */,
+				5EC42DA3213D621D00B11BA5 /* AddCitySearchBarDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		622D65D6D8F96B689D8F8136 /* Frameworks */ = {
@@ -414,6 +428,7 @@
 				5E634D50213AF0B500354FE9 /* WeatherPresenter.swift in Sources */,
 				5E634D75213CA05500354FE9 /* MainInfo.swift in Sources */,
 				5E634D64213C967800354FE9 /* Props.swift in Sources */,
+				5EC42DA2213D4EA900B11BA5 /* AddCityTableViewDelegate.swift in Sources */,
 				5E634D91213D33DA00354FE9 /* AddCityProtocols.swift in Sources */,
 				5E634D7D213CB37400354FE9 /* WeatherTableViewDelegate.swift in Sources */,
 				5E634D7B213CAD9E00354FE9 /* WeatherData.swift in Sources */,
@@ -430,6 +445,7 @@
 				5E634D51213AF0B500354FE9 /* WeatherRouter.swift in Sources */,
 				5E634D80213CB4E600354FE9 /* WeatherCell.swift in Sources */,
 				5E634D5F213B2FBB00354FE9 /* baseUrl.swift in Sources */,
+				5EC42DA4213D621D00B11BA5 /* AddCitySearchBarDelegate.swift in Sources */,
 				5E634D54213AF0B500354FE9 /* WeatherInteractor.swift in Sources */,
 				5E634D6B213C9BB500354FE9 /* TodayWeather.swift in Sources */,
 				5E634D6D213C9D5900354FE9 /* CityWeather.swift in Sources */,

@@ -30,5 +30,5 @@ protocol AddCityInteractorProtocol: class {
 protocol AddCityViewProtocol: class {
 
   var presenter: AddCityPresenterProtocol?  { get set }
-    func setCities(cities: [City])
+    func setCities(_cities: [City])
 }
