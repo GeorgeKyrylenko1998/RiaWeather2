@@ -1,0 +1,6 @@
+framework module Pods_RiaWeather2 {
+  umbrella header "Pods-RiaWeather2-umbrella.h"
+
+  export *
+  module * { export * }
+}
