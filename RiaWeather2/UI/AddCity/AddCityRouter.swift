@@ -14,7 +14,7 @@ class AddCityRouter: AddCityWireframeProtocol {
     
     weak var viewController: UIViewController?
     
-    static func createModule() -> UIViewController {
+    static func createModule() -> AddCityViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = AddCityViewController(nibName: nil, bundle: nil)
         let interactor = AddCityInteractor()

@@ -25,5 +25,8 @@ extension AddCityViewController:UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.setCity(id:String(filterCity[indexPath.row].id ?? 0))
+        self.navigationController?.popViewController(animated: true)
+    }
 }

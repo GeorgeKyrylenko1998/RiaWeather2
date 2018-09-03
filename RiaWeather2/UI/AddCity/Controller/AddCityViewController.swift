@@ -12,10 +12,8 @@ import UIKit
 import RxSwift
 
 class AddCityViewController: UIViewController, AddCityViewProtocol {
-
-    
-
 	var presenter: AddCityPresenterProtocol?
+    var delegate: AddCityDelegate?
     
     var search = UISearchBar()
     var citytableView = UITableView()

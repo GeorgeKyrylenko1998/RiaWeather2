@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol AddCityDelegate {
+    func setCity(id: String)
+}

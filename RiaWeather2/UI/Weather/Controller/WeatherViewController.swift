@@ -32,6 +32,7 @@ class WeatherViewController: UIViewController, WeatherViewProtocol {
     }
     @IBAction func AddCityAction(_ sender: Any) {
        let addCityView = AddCityRouter.createModule()
+        addCityView.delegate = self
         self.navigationController?.pushViewController(addCityView, animated: true)
     }
 }

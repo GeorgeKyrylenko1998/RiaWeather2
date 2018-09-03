@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+extension WeatherViewController: AddCityDelegate{
+    func setCity(id: String) {
+        var cities = Defaults.getSities()
+        cities.append(id)
+        Defaults.setCity(city: cities)
+        self.presenter?.getWeather()
+    }
+}
